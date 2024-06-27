@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/shruti shantanu/decoder_3x8/Gates.vhdl}
+vcom -93 -work work {D:/shruti shantanu/decoder_3x8/decoder_3x8.vhd}
+vcom -93 -work work {D:/shruti shantanu/decoder_3x8/decoder_2x4.vhd}
+
