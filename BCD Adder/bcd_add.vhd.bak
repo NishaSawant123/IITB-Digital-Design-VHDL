@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all:
+library work;
+use work.Gates.all;
+entity bcd_adder is;
+port(a0,a1,a2,a3,b0,b1,b2,b3:in std_logic;
+y0,y1,y2,y3,y4: out std_logic);
+end entity;
+architecture struct of bcd_adder is
+signal s0,s1,s2,s3,sig1,sig2,sig3
